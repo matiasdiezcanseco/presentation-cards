@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useTransition } from "react";
 import { Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { createCard } from "~/server/actions/cards";
@@ -14,9 +14,7 @@ export function CreateCardButton() {
       try {
         const result = await createCard();
         if (result.success) {
-            // Ideally navigate to editor, but for now just refresh dashboard
-            // router.push(`/editor/${result.id}`);
-            router.refresh();
+          router.push(`/editor/${result.id}`);
         }
       } catch (error) {
         console.error("Failed to create card", error);

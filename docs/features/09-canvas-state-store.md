@@ -1,11 +1,11 @@
 # Feature 09: Editor State Management
-**Status:** Pending
+**Status:** Completed
 
 ## Goal
 Manage the state of the active card session.
 
 ## Tasks
-- [ ] Set up a store (Zustand/Context) for Editor state.
-- [ ] Track: `elements`, `selectedElementIds`, `canvasScale`.
-- [ ] Implement actions: `addElement`, `updateElement`, `removeElement`.
+- [x] Set up a store (Zustand/Context) for Editor state.
+- [x] Track: `elements`, `selectedElementIds`, `canvasScale`.
+- [x] Implement actions: `addElement`, `updateElement`, `removeElement`.
 

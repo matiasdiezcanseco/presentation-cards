@@ -1,13 +1,13 @@
 # Feature 07: Editor Layout
-**Status:** Pending
+**Status:** Completed
 
 ## Goal
 The main workspace for designing a card.
 
 ## Tasks
-- [ ] Create `/editor/[cardId]` page.
-- [ ] Implement Left Sidebar (Tools/Assets).
-- [ ] Implement Top Bar (Title, Save, Export).
-- [ ] Implement Right Sidebar (Properties Panel).
-- [ ] Implement Center Canvas Area (pan/zoom container).
+- [x] Create `/editor/[cardId]` page.
+- [x] Implement Left Sidebar (Tools/Assets).
+- [x] Implement Top Bar (Title, Save, Export).
+- [x] Implement Right Sidebar (Properties Panel).
+- [x] Implement Center Canvas Area (pan/zoom container).
 
