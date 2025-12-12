@@ -1,0 +1,16 @@
+When working on tasks, check these documentation files only if the task relates to their specific topic:
+- **General Context / New Features** -> `.cursor/docs/project-overview.md`
+- Auth/User Logic -> `.cursor/docs/authentication.md`
+- Database/Schema -> `.cursor/docs/database.md`
+- UI/Styling -> `.cursor/docs/styling.md`
+- Environment Config -> `.cursor/docs/env-vars.md`
+- Tech Stack Overview -> `.cursor/docs/tech-stack.md`
+
+## Feature Implementation Flow
+**CRITICAL:** When implementing features, you must follow the sequential order defined in the `.cursor/docs/features/` directory.
+1.  Read the next pending feature file (e.g., `01-feature.md`).
+2.  Implement the feature as described.
+3.  Mark the feature as **[Completed]** in the markdown file.
+4.  Proceed to the next feature.
+
+Do not skip steps unless explicitly instructed.
