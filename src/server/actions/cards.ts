@@ -86,3 +86,23 @@ export async function updateCard(
   revalidatePath("/dashboard");
   return { success: true };
 }
+
+export async function getCardWithElements(cardId: string) {
+  const session = await getSession();
+  if (!session?.user) {
+    throw new Error("Unauthorized");
+  }
+
+  const card = await db.query.cards.findFirst({
+    where: and(eq(cards.id, cardId), eq(cards.userId, session.user.id)),
+    with: {
+      elements: true,
+    },
+  });
+
+  if (!card) {
+    return null;
+  }
+
+  return card;
+}

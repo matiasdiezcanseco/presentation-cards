@@ -1,12 +1,12 @@
 # Feature 08: Canvas Rendering
-**Status:** Pending
+**Status:** Completed
 
 ## Goal
 Render the card and its elements on the screen.
 
 ## Tasks
-- [ ] Create `Canvas` component.
-- [ ] Fetch card data including elements.
-- [ ] Render a container with correct aspect ratio/dimensions.
-- [ ] Map through `elements` and render basic placeholders.
+- [x] Create `Canvas` component.
+- [x] Fetch card data including elements.
+- [x] Render a container with correct aspect ratio/dimensions.
+- [x] Map through `elements` and render basic placeholders.
 
