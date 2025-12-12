@@ -1,11 +1,11 @@
 # Feature 13: Element Resizing
-**Status:** Pending
+**Status:** [Completed]
 
 ## Goal
 Resize elements using handles.
 
 ## Tasks
-- [ ] Add resize handles (corners/edges) to selection box.
-- [ ] Implement drag logic for handles.
-- [ ] Update element `width` and `height`.
+- [x] Add resize handles (corners/edges) to selection box.
+- [x] Implement drag logic for handles.
+- [x] Update element `width` and `height`.
 
