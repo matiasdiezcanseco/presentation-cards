@@ -1,11 +1,11 @@
 # Feature 11: Element Selection
-**Status:** Pending
+**Status:** [Completed]
 
 ## Goal
 Allow users to select elements to manipulate them.
 
 ## Tasks
-- [ ] Implement click handler on elements.
-- [ ] Show selection border/handles around active element.
-- [ ] Support click-outside to deselect.
+- [x] Implement click handler on elements.
+- [x] Show selection border/handles around active element.
+- [x] Support click-outside to deselect.
 

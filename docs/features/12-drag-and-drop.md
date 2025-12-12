@@ -1,11 +1,11 @@
 # Feature 12: Drag and Drop
-**Status:** Pending
+**Status:** [Completed]
 
 ## Goal
 Move elements around the canvas.
 
 ## Tasks
-- [ ] Implement pointer down/move/up logic.
-- [ ] Update element `x` and `y` coordinates in real-time.
-- [ ] Ensure elements stay within bounds (optional).
+- [x] Implement pointer down/move/up logic.
+- [x] Update element `x` and `y` coordinates in real-time.
+- [x] Ensure elements stay within bounds (optional).
 

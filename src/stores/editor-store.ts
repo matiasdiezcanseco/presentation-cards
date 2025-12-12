@@ -26,12 +26,16 @@ export interface Card {
   updatedAt: Date;
 }
 
+export type Tool = "select" | "text" | "image" | "rectangle";
+
 interface EditorState {
   // State
   card: Card | null;
   elements: CardElement[];
   selectedElementIds: string[];
   canvasScale: number;
+  activeTool: Tool;
+  editingElementId: string | null;
 
   // Card actions
   setCard: (card: Card | null) => void;
@@ -47,6 +51,10 @@ interface EditorState {
   selectElement: (id: string, multi?: boolean) => void;
   deselectAll: () => void;
 
+  // Tool actions
+  setActiveTool: (tool: Tool) => void;
+  setEditingElementId: (id: string | null) => void;
+
   // Canvas actions
   setCanvasScale: (scale: number) => void;
 }
@@ -57,6 +65,8 @@ export const useEditorStore = create<EditorState>((set) => ({
   elements: [],
   selectedElementIds: [],
   canvasScale: 1,
+  activeTool: "select",
+  editingElementId: null,
 
   // Card actions
   setCard: (card) => set({ card }),
@@ -96,7 +106,11 @@ export const useEditorStore = create<EditorState>((set) => ({
         : [id],
     })),
 
-  deselectAll: () => set({ selectedElementIds: [] }),
+  deselectAll: () => set({ selectedElementIds: [], editingElementId: null }),
+
+  // Tool actions
+  setActiveTool: (tool) => set({ activeTool: tool }),
+  setEditingElementId: (id) => set({ editingElementId: id }),
 
   // Canvas actions
   setCanvasScale: (scale) => set({ canvasScale: scale }),
